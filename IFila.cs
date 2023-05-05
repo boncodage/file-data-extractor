@@ -1,4 +1,4 @@
-namespace ExcelExtractor.ExcelExtractor;
+namespace ExcelExtractor;
 
 public interface IFila<T>
 {

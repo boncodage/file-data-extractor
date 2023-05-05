@@ -1,10 +1,10 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System.Text.Json;
-using ExcelExtractor.ArchivoEsb;
+using ExcelExtractor.Archivo;
 
 string path = "archivo.csv";
-var archivoEsbExcel = new ArchivoEsbCsvDataExtractor();
-var result = archivoEsbExcel.ExtraerDatosDesdeArchivo(path).ToList();
+var archivoEsbExcel = new ArchivoCsvFileDataExtractor();
+var result = archivoEsbExcel.ExtraerDatosArchivo(path).ToList();
 // utilizar los datos extraídos...
 Console.WriteLine(JsonSerializer.Serialize(result));
