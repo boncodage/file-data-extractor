@@ -1,4 +1,4 @@
-﻿using NPOI.HSSF.UserModel;
+using NPOI.HSSF.UserModel;
 using NPOI.SS.UserModel;
 using NPOI.XSSF.UserModel;
 
@@ -17,7 +17,7 @@ public abstract class BaseFileDataExtractor<T>
         throw new NotImplementedException($"No existe un método de extracción de datos para el archivo: {Path.GetFileName(path)}");
     }
 
-    protected internal T ExtraerDatosArchivo(string path)
+    protected internal T Extraer(string path)
     {
         var fileExtension = Path.GetExtension(path).ToLower();
         switch (fileExtension)
